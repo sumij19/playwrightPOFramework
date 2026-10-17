@@ -1,0 +1,29 @@
+{
+  "name": "playwrightfw1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "auth1": "playwright test tests/auth.setup.ts",
+    "auth": "tsx global-setup.ts",
+    "bddgen": "bddgen",
+    "test:bdd": "bddgen && playwright test",
+    "test:bdd:radio": "bddgen && playwright test --grep \"Verify radio buttons section\"",
+    
+    "test:formControls": "playwright test tests/formControls.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.6.4",
+    "playwright-bdd": "^9.2.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5"
+  }
+}
